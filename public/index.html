@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Sai Kamma</title>
+</head>
+<body>
+    <div class="container">
+    <nav>   
+        <a class="menu" href="#about">About</a>
+        <a class="menu" href="#education">Education</a>
+        <a class="menu" href="#experience">Experience</a>
+        <a class="menu" href="#projects">Projects</a>
+        <a class="menu" href="#skills">Skills</a>
+        <a class="menu" href="#blogs">Blogs</a>
+        <a class="menu" href="#footer">Footer</a>
+
+    </nav>
+
+
+        <div class="container1" id="imag">
+
+            <img src="image.png" alt ="Nikhil">
+        </div>
+        <div class="container1" id="about">
+            <h1>About</h1>
+            <p>My name is Nikhil Sai Kamma. I am currently studying Master's in Computer Science at University of New Haven. 
+                I want to become a full stack developer.
+            </p>
+
+        </div>
+        <div class="container1" id="experience">
+            <h1>Experience</h1>
+            <p> I have worked at Cognizant as a fullstack developer for one year. My role was to design website using  springboot framework and create view pages using HTML and CSS. 
+                Also, I had to test the application using Unit testing.
+             </p>
+
+        </div>
+
+        <div class="container2" id="education">
+            <h1>Education</h1>
+            <p> <ul><li> Master's in Computer science at University of New Haven with 3.8GPA</li><br>
+            <li> Bachelors in Electronics and Communication Engineering at Lovely Professional University with 3.22GPA</li><br>
+            <li> High school at Sri Chaitanya junior college with 3.6GPA</li>
+            </ul></p>
+
+        </div>
+       
+        <div class="container2" id="skills">
+            <h1>Skills</h1>
+            <p> <ol>
+                <li>HTML</li><br>
+                <li>CSS</li><br>
+                <li>JAVA</li><br>
+                <li>Springboot</li><br>
+                <li>Data Structures</li>
+              </ol></p>
+            
+
+        </div>
+
+        <div class="container3" id="projects">
+            <h1>Projects</h1>
+            <p> I have done Electronic Voting Machine in my undergraduation. This project was about how evm counts votes of people and also tells how many votes does each party got. 
+                This project was.done on Xilinx software using Verilog program
+             </p>
+
+        </div>
+        <div class="container3" id="blogs">
+            <h1>Blogs</h1>
+            <p> I have written one blog when I was studying 2nd year in my undergraduation. It was about legendary singer from Andhra Pradesh, India. 
+                He is S.P Balasubramanyam and he sang more than 10,000 songs in 6 different languages in his career. 
+                Also, he directed some films and produced. He got several awards including one national award.
+             </p>
+
+        </div>
+
+        <footer>
+            <h1>Footer</h1>
+            <p><ul><li> LinkedIn <a href="https://www.linkedin.com/in/kamma-nikhil-sai-b78673170/">https://www.linkedin.com/in/kamma-nikhil-sai-b78673170/</a></li><br>
+            <li> Github <a href="https://github.com/nikhilsai45/Implement_Reinforcement-Learning">https://github.com/nikhilsai45/Implement_Reinforcement-Learning</a></li><br>
+            <li> Quora <a href="https://www.quora.com/profile/Kamma-NikhilSai">https://www.quora.com/profile/Kamma-NikhilSai</a></li>
+            </ul></p>
+
+        </footer>
+
+
+    </div>
+
+    <style>
+        :root{
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+.container{
+    background-color: aliceblue;
+    display:grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.4fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.2rem;
+    grid-template-areas:
+    "nav nav nav nav"
+    "imag about experience experience"
+    "education education skills skills"
+    "projects projects blogs blogs"
+    "footer footer footer footer"
+    ;
+}
+nav{
+    grid-area: nav;
+    background-color: lightblue;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+a{
+    margin: 0 10px; 
+    padding: 0 10px;
+    padding-top: 10px;
+}
+
+#imag{
+    grid-area: imag;
+    display:inline-block;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+}
+img{
+    width:100px;
+    height:200px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#about{
+    grid-area: about;
+    display:inline-block;
+    vertical-align: top;
+    text-align:center;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+a.menu{
+    text-decoration: none;
+    color:blue;
+    font-size: large;
+}
+
+
+#experience{
+    grid-area: experience;
+    background-color: paleturquoise;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+}
+#education{
+    grid-area: education;
+    background-color: #FFC2C7;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+}
+#skills{
+    grid-area: skills;
+    background-color: #B6E5D8;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+}
+#projects{
+    grid-area: projects;
+    background-color: #FBE5C8;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+}
+#blogs{
+    grid-area: blogs;
+    background-color: #8FDDE7;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+}
+footer{
+    grid-area: footer;
+    background-color: aliceblue;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Arial','Cambria', 'Cochin', 'Garamond', 'Times New Roman';
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+p{
+    text-align:start;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+h1{
+    text-align: left;
+    color:red;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-template-areas:
+        "nav"
+        "imag"
+        "about"
+        "experience"
+        "education"
+        "skills"
+        "projects"
+        "blogs"
+        "footer"
+          ;
+    }
+    nav{
+        width: fit-content;
+        height: fit-content;
+    }
+    .container{
+        width:fit-content;
+    }
+    #imag,#about{
+        width:100%;
+        text-align: center;
+    }
+    #experience,#education,#projects,#blogs{
+        width: fit-content;
+        height: fit-content;
+    }
+    #skills{
+        width:auto;
+        background-color: skyblue;
+    }
+}
+
+    </style>
+
+</body>
+</html>
