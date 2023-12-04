@@ -44,7 +44,7 @@ else if(req.url=='/api')
     const results = await cursor.toArray();
     //console.log(results);
     const js= (JSON.stringify(results));
-    res.writeHead(200,headers)
+    res.writeHead(200,{ 'Content-Type' : 'application/json'})
     console.log(js);
     res.end(js);
 
