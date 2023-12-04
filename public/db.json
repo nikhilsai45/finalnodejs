@@ -52,7 +52,7 @@
     "name": "Rohit",
     "age": 30
   },
-  "booking_status": true
+  "booking_status": false
 },
 {
   "flight_number":6,
